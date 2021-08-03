@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Homepage.master.cs" Inherits="Homepage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+            height: 654px;
+            margin-bottom: 37px;
+        }
+        .style2
+        {
+            height: 53px;
+        }
+        .style6
+        {
+            width: 123px;
+        }
+        .style7
+        {
+            width: 2034px;
+            height: 109px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table class="style1">
+        <tr>
+            <td class="style2" colspan="2" align="center" bgcolor="#FF9933" style="font-family: 'Segoe UI Black'; font-size: xx-large; color: #FFFFFF">
+                <asp:Panel ID="Panel1" runat="server" 
+                    style="z-index: 1; left: -2px; top: 0px; position: absolute; height: 16px; width: 1525px">
+                    &nbsp;</asp:Panel>
+                Alpha Academy Library System</td>
+        </tr>
+        <tr>
+            <td class="style6" bgcolor="#FF9933">
+                <asp:ContentPlaceHolder ID="LeftBar" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+            <td>
+                <asp:ContentPlaceHolder ID="Result" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
